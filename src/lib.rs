@@ -8,7 +8,7 @@ use std::{
 };
 
 pub struct RcCell<A> {
-  pub value: Rc<RefCell<A>>
+  value: Rc<RefCell<A>>
 }
 
 impl<A> RcCell<A> {
@@ -107,6 +107,7 @@ mod tests {
     counter_a.update(|mut v| v.value += 1);
     counter_b.borrow_mut().value *= 3;
 
+    assert_eq!(counter.borrow().value, 6);
     assert_eq!(*counter_a.borrow(), *counter_b.borrow());
   }
 }
