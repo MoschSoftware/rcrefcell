@@ -1,6 +1,7 @@
 # rcrefcell
 Simple wrapper for Rc<RefCell<A<A>>>
-  
+
+## Example
 ```rs
 #[derive(Debug, PartialEq)]
 struct Data<A> {
