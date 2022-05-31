@@ -14,6 +14,7 @@ impl<A> Data<A> {
     }
   }
 }
+  
 let data: Data<i32> = Data::new(1);
 
 let counter: RcCell<Data<i32>> = RcCell::new(data);
