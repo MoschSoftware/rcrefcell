@@ -1,6 +1,6 @@
 [package]
 name = "rcrefcell"
-version = "1.0.4"
+version = "1.0.5"
 authors = ["Charles Bayley <cbayley95@gmail.com>"]
 edition = "2018"
 keywords = ["rc", "refcell", "utility"] 
