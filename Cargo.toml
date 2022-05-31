@@ -1,0 +1,11 @@
+[package]
+name = "rcrefcell"
+version = "1.0.0"
+authors = ["Charles Bayley <cbayley95@gmail.com>"]
+edition = "2018"
+keywords = ["rc", "refcell", "utility"] 
+categories = ["utility"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
