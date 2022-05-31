@@ -1,12 +1,13 @@
 [package]
 name = "rcrefcell"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["Charles Bayley <cbayley95@gmail.com>"]
 edition = "2018"
 keywords = ["rc", "refcell", "utility"] 
 categories = ["rust-patterns"]
 description = "Wrapper type for Rc<RefCell<A>>"
 license-file = "LICENSE"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
