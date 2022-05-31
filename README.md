@@ -1,5 +1,5 @@
 # rcrefcell
-Simple wrapper for Rc<RefCell<A<A>>>
+Simple wrapper for `Rc<RefCell<A>>`
 
 ## Example
 ```rs
