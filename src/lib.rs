@@ -65,6 +65,7 @@ mod tests {
     let clone1 = data.clone();
     let clone2 = data.clone();
 
+    assert_eq!(clone1.borrow().value, 1);
     assert_eq!(*clone1.borrow(), *clone2.borrow());
   }
 
@@ -78,6 +79,7 @@ mod tests {
     let clone2 = data.clone();
     clone2.update(|mut d| d.value *= 3);
 
+    assert_eq!(data.borrow().value, 6);
     assert_eq!(*clone1.borrow(), *clone2.borrow());
   }
 }
