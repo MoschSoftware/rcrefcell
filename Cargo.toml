@@ -1,10 +1,10 @@
 [package]
 name = "rcrefcell"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Charles Bayley <cbayley95@gmail.com>"]
 edition = "2018"
 keywords = ["rc", "refcell", "utility"] 
-categories = ["utility"]
+categories = ["rust-patterns"]
 description = "Wrapper type for Rc<RefCell<A>>"
 license-file = "LICENSE"
 
