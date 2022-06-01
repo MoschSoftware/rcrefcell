@@ -11,17 +11,19 @@ pub struct RcCell<A> {
   value: Rc<RefCell<A>>
 }
 
-impl<A> RcCell<A> {
-  pub fn new(value: A) -> RcCell<A> {
-    let value = RefCell::new(value);
-    let value = Rc::new(value);
+impl<A> Clone for RcCell<A> {
+  fn clone(&self) -> RcCell<A> {
+    let value = Rc::clone(&self.value);
     RcCell {
       value
     }
   }
+}
 
-  pub fn clone(&self) -> RcCell<A> {
-    let value = Rc::clone(&self.value);
+impl<A> RcCell<A> {
+  pub fn new(value: A) -> RcCell<A> {
+    let value = RefCell::new(value);
+    let value = Rc::new(value);
     RcCell {
       value
     }
